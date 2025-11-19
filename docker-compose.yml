@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ai-lab:
+    build: .
+    image: my-tiny-llama-lab
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/workspace/notebooks  # 로컬 notebooks 폴더를 컨테이너와 연결
+    # [핵심] RTX 2060 GPU를 컨테이너에 할당
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

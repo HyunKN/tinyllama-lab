@@ -1,0 +1,22 @@
+# 1. 파이썬 관련 쓰레기 파일 무시
+__pycache__/
+*.py[cod]
+
+# 2. 주피터 노트북 체크포인트 무시 (이거 안 하면 커밋 지저분해짐)
+.ipynb_checkpoints/
+
+# 3. 환경변수 및 비밀키 (혹시 나중에 쓸 API 키 유출 방지)
+.env
+.env.local
+
+# 4. 대용량 모델 데이터 무시
+# 우리는 Docker 안에서 받겠지만, 혹시 로컬에 저장된 모델이 있다면 무시해야 함
+models/
+*.pth
+*.bin
+*.safetensors
+huggingface/
+
+# 5. 운영체제 파일 무시
+.DS_Store
+Thumbs.db
