@@ -15,8 +15,7 @@
 ## 📚 Curriculum & Roadmap (Paper Mapping)
 
 ### Phase 1: Scaled Dot-Product Attention (Section 3.2.1)
-- **목표**: 논문의 핵심 수식 $Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}})V$ 시각화
-                                                      (attention_matrix에 들어있는 값들(0.2555 같은 숫자))
+- **목표**: 논문의 핵심 수식 $Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}})V$ 시각화 / (attention_matrix에 들어있는 값들(0.2555 같은 숫자))
 - **활동**: JupyterLab에서 토큰 간의 연관성(Heatmap)을 추출하여, 단어 사이의 '유사도'가 어떻게 계산되는지 확인.
 
 ### Phase 2: Masked Multi-Head Attention (Section 3.2.2)
