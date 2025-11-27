@@ -16,6 +16,7 @@
 
 ### Phase 1: Scaled Dot-Product Attention (Section 3.2.1)
 - **목표**: 논문의 핵심 수식 $Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}})V$ 시각화
+                                                      (attention_matrix에 들어있는 값들(0.2555 같은 숫자))
 - **활동**: JupyterLab에서 토큰 간의 연관성(Heatmap)을 추출하여, 단어 사이의 '유사도'가 어떻게 계산되는지 확인.
 
 ### Phase 2: Masked Multi-Head Attention (Section 3.2.2)
@@ -27,4 +28,4 @@
 - **활동**: 서로 다른 Head(예: Head 0 vs Head 10)가 같은 문장에서 서로 다른 문법적/의미적 요소에 주목하고 있음을 비교 분석.
 
 ---
-*Created by [Your Name] on Micro-AI Lab*
+*Created by [HyunKN] on Micro-AI Lab*
